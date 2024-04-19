@@ -1,3 +1,5 @@
+import time
+
 from socketio import *
 from gevent import pywsgi
 import GameClass

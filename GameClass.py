@@ -1,4 +1,4 @@
-import termcolor2
+import termcolor
 import json
 
 
@@ -32,8 +32,8 @@ def makan_giri(server, choosen_mohre, player_id):
 
 def makan_pardazesh(choosen_position, color):
     global mohre_for_check
-    x = termcolor2.colored('X', color=color)
-    colored_mohre = termcolor2.colored(last_mohre, color=color)
+    x = termcolor.colored('X', color=color)
+    colored_mohre = termcolor.colored(last_mohre, color=color)
     XOboard[choosen_position[0]][choosen_position[1]] = x
     board[choosen_position[0]][choosen_position[1]] = colored_mohre
     board_for_check[choosen_position[0]][choosen_position[1]] = mohre_for_check

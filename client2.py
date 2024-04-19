@@ -1,6 +1,6 @@
 from socketio import *
 import fpfc
-import termcolor2
+import termcolor
 import time
 from tabulate import tabulate
 
@@ -35,7 +35,7 @@ def printBoard(board):
 
 @client.event
 def show_partner_info(data):
-    text = termcolor2.colored(f'--->> Your partner is {data[0]} <<---', color=data[2])
+    text = termcolor.colored(f'--->> Your partner is {data[0]} <<---', color=data[2])
     print(text)
 
 

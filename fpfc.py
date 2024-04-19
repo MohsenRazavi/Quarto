@@ -1,6 +1,6 @@
 # first page for client (fpfc)
 import pyfiglet
-import termcolor2
+import termcolor
 
 
 
@@ -9,8 +9,8 @@ class User:
 
     def main_page(self):
         quarto = pyfiglet.figlet_format('Q u a r t o')
-        quarto = termcolor2.colored(quarto, color='blue')
-        text = termcolor2.colored('By Seyed Mohsen Razavi Zadegan\n StdNum : 40030489', color='blue')
+        quarto = termcolor.colored(quarto, color='blue')
+        text = termcolor.colored('By Seyed Mohsen Razavi Zadegan\n StdNum : 40030489', color='blue')
         print(quarto, text)
         print('\n\n---> Login \n---> Signup\n---> Exit')
         while True:
